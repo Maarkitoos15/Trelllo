@@ -1,0 +1,178 @@
+/* Estilo base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2d8cf0;
+  color: white;
+}
+
+header input {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+header button:hover {
+  background-color: #218838;
+}
+
+/* Botones de cambio de tema */
+.temas {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.temas button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.temas .claro {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.temas .oscuro {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.temas .pastel {
+  background-color: #fbeaff;
+  color: #5a3d2f;
+}
+
+.temas button:hover {
+  opacity: 0.8;
+}
+
+/* Estilo para el tablero */
+#tablero {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.columna {
+  width: 30%;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.columna h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.lista {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 200px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.tarea {
+  padding: 10px;
+  background-color: #e2e3e5;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+  transition: background-color 0.3s;
+}
+
+.tarea button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tarea button:hover {
+  background-color: #d32f2f;
+}
+
+/* Tema claro */
+.claro {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.claro .columna {
+  background-color: #fff;
+  color: #333;
+}
+
+.claro .tarea {
+  background-color: #f1f1f1;
+}
+
+/* Tema oscuro */
+.oscuro {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.oscuro .columna {
+  background-color: #444;
+  color: #f9f9f9;
+}
+
+.oscuro .tarea {
+  background-color: #555;
+}
+
+/* Tema pastel */
+.pastel {
+  background-color: #fbeaff;
+  color: #5a3d2f;
+}
+
+.pastel .columna {
+  background-color: #fff3e1;
+  color: #5a3d2f;
+}
+
+.pastel .tarea {
+  background-color: #ffe6fa;
+}
